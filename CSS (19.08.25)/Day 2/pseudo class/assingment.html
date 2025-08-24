@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red:hover+#blue{
+            background-color: blue;
+           
+        }
+        #blue:hover+#per{
+            background-color: purple;
+            
+        }
+        #per:hover+#green{
+            background-color: green;
+           
+        }
+        #green:hover+#red{
+            background-color: red;
+           
+        }
+    </style>
+</head>
+<body>
+    
+   <center>
+    <table border="1"  cellspacing="0px">
+        <tr id="red" hight="10">
+            <th width="300px" height="100px">Row - 1</th>
+        </tr>
+        <tr id="blue">
+            <th width="300px" height="100px">Row - 2</th>
+        </tr>
+        <tr id="per">
+            <th width="300px" height="100px">Row - 3</th>
+        </tr>
+        <tr id="green">
+            <th width="300px" height="100px">Row - 4</th>
+        </tr>
+        
+    </table>
+   </center>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!Doctype html>
+<html>
+
+	<head>
+		<title> Formating tag </title>
+	</head>
+	 
+	<body>
+<h1> hello </h1?
+<b> Para </b>
+	</body>
+
+
+</html>

@@ -1,0 +1,29 @@
+# Binaries
+*.exe
+*.dll
+*.class
+*.jar
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Node / Web
+node_modules/
+dist/
+build/
+
+# Large media files
+*.mp4
+*.zip
+*.rar
+*.7z
+*.iso

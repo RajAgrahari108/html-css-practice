@@ -1,0 +1,72 @@
+ h1{
+            text-align: center;
+        }
+       
+            #blue:checked~p{
+                background-color: blue;
+            }
+             #red:checked~p{
+                background-color: red;
+            }
+             #green:checked~p{
+                background-color: green;
+            }
+             #yellow:checked~p{
+                background-color: yellow;
+            }
+
+            #upper:checked~p{
+                text-transform: uppercase;
+            }
+             #lower:checked~p{
+                text-transform: lowercase;
+            }
+             #Capita:checked~p{
+                text-transform: captalize;
+            }
+
+             #a:checked~p{
+                text-align: center;
+            }
+             #r:checked~p{
+                text-align: right;
+            }
+             #l:checked~p{
+                text-align: Left;
+            }
+
+              #x:checked~p{
+                text-shadow:10px 0px 5px black ;
+            }
+             #y:checked~p{
+                               text-shadow:0px 10px 5px black ;
+
+            }
+             #xy:checked~p{
+                               text-shadow:10px 10px 5px black ;
+
+            }
+            
+        
+
+           #un:checked~p{
+                text-decoration: underline;
+            }
+             #ov:checked~p{
+                 text-decoration: overline;
+            }
+             #li:checked~p{
+                 text-decoration: line-through;
+            }
+
+            #wa:checked~p{
+                text-decoration-style: wavy;
+            }
+             #da:checked~p{
+                 text-decoration-style: double;
+            }
+             #das:checked~p{
+                 text-decoration-style: dashed;
+            }
+
+             

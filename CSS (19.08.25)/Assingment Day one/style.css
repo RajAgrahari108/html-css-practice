@@ -1,0 +1,25 @@
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#light{
+    background-color: lightgreen;
+}
+#color{
+    background-color: lightcoral;
+}
+#red{
+    background-color: red;
+    color: blue;
+}
+#all.all{
+    background-color: yellow;
+}
+tr.tag{
+    background-color: aqua;
+}
+.tag1{
+    background-color: rgb(255, 0, 200);
+}

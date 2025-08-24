@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 30%;
+        }
+        
+        #red:checked~div{
+            background-color: red;
+        }
+        #blue:checked~div{
+            background-color: blue;
+        }
+        #green:checked~div{
+            background-color: green;
+        }
+        #yellow:checked~div{
+            background-color: yellow;
+        }
+        
+    </style>
+</head>
+
+<body>
+    blue<input type="radio" name="color" id="blue">
+    red<input type="radio" name="color" id="red">
+    green<input type="radio" name="color" id="green">
+   yellow<input type="radio" name="color" id="yellow">
+
+   <br>
+
+   <div>
+
+   </div>
+</body>
+</html>

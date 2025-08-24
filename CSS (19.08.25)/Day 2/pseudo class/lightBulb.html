@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #img{
+            height: 0px;
+        }
+        #on:checked ~ #on{
+            height: 300px;
+        }
+
+        #off:checked ~ #off{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    On<input type="radio" name="photo" id="on">
+    OFF<input type="radio" name="photo" id="off">
+<br><br>
+    <img src="" alt="" id="on" height="100px">
+    <img src="" alt="" id="off" height="100px">
+</body>
+</html>
