@@ -1,0 +1,102 @@
+/* h1{
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 32px;
+    font-weight: 900px;
+    font-style: oblique;
+    font-family: "Story Script", sans-serif;
+} */
+
+
+
+/* #s1{
+    height: 200px;
+    background-color: blue;
+    border: solid;
+    background-position: right;
+    background-image: url('https://t4.ftcdn.net/jpg/04/15/79/09/360_F_415790935_7va5lMHOmyhvAcdskXbSx7lDJUp0cfja.jpg');
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+}
+
+#s2{
+    height: 200px;
+    background-color: blue;
+    border: solid;
+    background-position: left;
+    background-image: url('https://t4.ftcdn.net/jpg/04/15/79/09/360_F_415790935_7va5lMHOmyhvAcdskXbSx7lDJUp0cfja.jpg');
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+}
+
+#s3{
+    height: 200px;
+    background-color: blue;
+    border: solid;
+    background-position: center;
+    background-image: url('https://t4.ftcdn.net/jpg/04/15/79/09/360_F_415790935_7va5lMHOmyhvAcdskXbSx7lDJUp0cfja.jpg');
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+}
+
+#s4{
+    height: 200px;
+    background-color: blue;
+    border: solid;
+    background-position: top;
+    background-image: url('https://t4.ftcdn.net/jpg/04/15/79/09/360_F_415790935_7va5lMHOmyhvAcdskXbSx7lDJUp0cfja.jpg');
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+}
+
+#s5{
+    height: 200px;
+    background-color: blue;
+    border: solid;
+    background-position: bottom center;
+    background-image: url('https://t4.ftcdn.net/jpg/04/15/79/09/360_F_415790935_7va5lMHOmyhvAcdskXbSx7lDJUp0cfja.jpg');
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+} */
+
+
+
+ .card{
+    height: 100vh;
+    background-image: url('https://t4.ftcdn.net/jpg/04/15/79/09/360_F_415790935_7va5lMHOmyhvAcdskXbSx7lDJUp0cfja.jpg');
+    background-position: center;
+    background-size: 600px 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+ }
+
+ .card1{
+   
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzc01Mq9H_4SJb_1N3EsRYIuK54MbJbja5OR4wBEc38ezec6LwU6Ox7a5vB8HxC8NVKro&usqp=CAU');
+} 
+
+ .card2{
+   
+    background-image: url('https://media.istockphoto.com/id/639499430/photo/african-safari-animals-meeting-together-around-tree.jpg?s=612x612&w=0&k=20&c=HYr5JkYADo1qU2EOEHOg6xe70assZFgACjLsF6ufU80=');
+} 
+ .card3{
+   
+    background-image: url('https://img.freepik.com/free-psd/adorable-sloth-hanging-branch_191095-79223.jpg?semt=ais_hybrid&w=740&q=80');
+} 
+
+ .card4{
+   
+    background-image: url('https://media.wired.com/photos/593261cab8eb31692072f129/191:100/w_1280,c_limit/85120553.jpg');
+} 
+ .card4{
+   
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/20/10/58/elephant-2870777_1280.jpg');
+} 
+
+
