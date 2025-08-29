@@ -1,0 +1,54 @@
+div{
+    height: 200px;
+    /* background-color: aqua; */
+    /* border: solid; */
+}
+#class-1:hover{
+    background-color: bisque;
+    background-image: url('https://t4.ftcdn.net/jpg/04/15/79/09/360_F_415790935_7va5lMHOmyhvAcdskXbSx7lDJUp0cfja.jpg');
+    background-position: center;
+    background-size: 300px 100px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    border-radius: 5%;
+}
+#class-2:hover{
+    background-color: yellowgreen;
+     background-image: url('https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=');
+    background-position: center;
+    background-size: 300px 100px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+        border-radius: 5%;
+
+}
+#class-3:hover{
+    background-color: brown;
+     background-image: url('https://media.istockphoto.com/id/510682838/photo/the-dance-competition.jpg?s=612x612&w=is&k=20&c=K4Y3Z0GDSXjG-lvxzcg4Y8UVVg5CUWYY8xGTVR_YXYQ=');
+    background-position: center;
+    background-size: 300px 100px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+        border-radius: 5%;
+
+}
+#class-4:hover{
+    background-color: green;
+    background-image: url('https://www.vifindia.org/sites/default/files/Akshardham%20temple%20image.jpg');
+    background-position: center;
+    background-size: 300px 100px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+        border-radius: 5%;
+
+}
+#class-5:hover{
+    background-color: blueviolet;
+     background-image: url('https://media.istockphoto.com/id/508628776/photo/sunset-over-kandariya-mahadeva-temple.jpg?s=612x612&w=0&k=20&c=YOpVZmLiY4ccl_aoWRJhfqLpNEDgjyOGuTAKbobCO-U=');
+    background-position: center;
+    background-size: 300px 100px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+        border-radius: 5%;
+
+}

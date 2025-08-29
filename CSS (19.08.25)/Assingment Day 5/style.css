@@ -1,0 +1,49 @@
+section{
+    background-image: radial-gradient(rgb(142, 12, 33),rgb(9, 88, 120),)
+}
+.format{
+            border: solid;
+            width: 600px;
+            height: 50px;
+        }
+        #a:hover{
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/042/730/459/small/lion-danger-animal-wildlife-nature-forest-photo.jpg');
+            height:300px;
+            background-size: 150px 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: aqua;
+        }
+        #b:hover{
+            background-image: url('https://cdn.britannica.com/94/494-050-A674AD3A/Fallow-deer-dama-dama.jpg');
+            height:300px;
+            background-size: 150px 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: yellow;
+        }
+        #c:hover{
+            background-image: url('https://motherspet.com/blogs/wp-content/uploads/2024/09/animal-and-their-babies-870x490.jpg');
+            height:300px;
+            background-size: 150px 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: orange;
+        }
+        #d:hover{
+            background-image: url('https://thumbs.dreamstime.com/b/happy-young-pig-isolated-white-background-funny-animals-emotions-happy-young-pig-isolated-white-background-funny-animals-373186198.jpg');
+            height:300px;
+            background-size: 150px 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: red
+            ;
+        }
+        #e:hover{
+            background-image: url('https://hips.hearstapps.com/hmg-prod/images/hippo-getty-jpg-1567092740.jpg?crop=1xw:0.999755859375xh;center,top&resize=980:*');
+            height:300px;
+            background-size: 150px 200px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: greenyellow;
+        }

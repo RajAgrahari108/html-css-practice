@@ -1,0 +1,23 @@
+section{
+    /* background-color: #f00; */
+    height: 400px;
+    width: 300px;
+    /* border-style: solid;
+    border-style: dashed;
+    border-style: groove;
+    border-style: double;
+    border-style: dotted;
+    border-width: 60px;
+    border-color: red; */
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/hippo-getty-jpg-1567092740.jpg?crop=1xw:0.999755859375xh;center,top&resize=980:*');
+    background-size: 500px 600px, cover;
+    background-position: center center, center top ;
+    /* border: 50px groove red; */
+    border-bottom: 20px dotted greenyellow;
+    border-top: 20px solid greenyellow;
+    border-right: 20px dashed greenyellow;
+    border-left: 20px double greenyellow;
+
+
+
+}
