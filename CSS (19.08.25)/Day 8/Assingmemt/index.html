@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main
+        {
+            height: 90vh;
+            width: 60vw;
+            background-color: plum;
+            margin: 0 auto;
+            margin-top: 35px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 5px grey;
+            display: flex;              
+            justify-content: center;   
+            align-items: center;
+        }
+        .aside1{
+            width: 30%;
+            height: 80vh;
+            background-image: url();
+            background-size: cover;
+            border: 1px solid black;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .aside2{
+            width: 35%;
+            height: 80vh;
+            background-color: black;
+            border-radius: 0px 10px 10px 0px;
+            opacity: 0.8;
+            color: white; 
+            text-align: center;
+        }
+        h1{
+            margin-top: 30px;
+        }
+        fieldset {
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 50px;
+            margin:0 auto;
+            width: 70%;          
+            color: white;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 10px;
+            text-align: left;    
+        }
+        .fake-btn {
+            background-color: green;
+            color: white;
+            padding:10px;
+            margin-left: 30px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-align: center;
+            width: 30%;
+        }
+
+        .fake-btn:hover {
+            background-color: darkgreen;
+        }       
+
+    </style>
+    
+</head>
+<body>
+    <main>
+        <aside class="aside1"></aside>
+        <aside class="aside2">
+            <h1>Registration Info</h1>
+            <fieldset><legend>Name</legend></fieldset>
+            <br>
+            <br>
+            <fieldset><legend>Birthdate</legend></fieldset>
+            <br>
+            <br>
+            <fieldset><legend>Gender</legend></fieldset>
+            <br>
+            <br>
+            <fieldset><legend>Email</legend></fieldset>
+            <br>
+            <br>
+            <fieldset><legend>Phone</legend></fieldset>
+            <br>
+            <div class="fake-btn">Submit</div>
+        </aside>
+</body>
+</html>
