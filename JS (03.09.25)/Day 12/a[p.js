@@ -22,3 +22,27 @@
 // console.log(res);
 
 
+// let names = ['raj', 'atul', 'gupta'];
+// let ans = name.map((el) =>{
+//     return el.split('').reverse().join('');
+// })
+// console.log(ans);
+
+
+
+// let filter = ['index.html', 'script.js', 'docs.dock', 'demo.txt', 'hello.java', 'style.css']
+ 
+// let snd = filter.map((el, i)=>{
+//     return el.endsWith('html') || el.endsWith('css') ||el.endsWith('js') ||el.endsWith('java');
+// })
+
+
+// let values = ['1a23', 10, '231a', 30, '70', 70];
+// let ansd = values.filter((el, i)=>{
+//     // return parseInt(el);
+
+
+//     return typeof el == 'number'
+// })
+// console.log(ansd);
+
