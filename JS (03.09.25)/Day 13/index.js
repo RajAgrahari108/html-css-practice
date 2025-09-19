@@ -37,16 +37,20 @@
 
 
 
-// ! reverse a stirng
-let str = 'hey hello hii'
-let reverse = str.split(' ').reduceRight((acc, el, i)=>{
-     console.log(acc, el);
-    return acc+' '+el;
-})
-console.log(reverse);
+// // ! reverse a stirng
+// let str = 'hey hello hii'
+// let reverse = str.split(' ').reduceRight((acc, el, i)=>{
+//      console.log(acc, el);
+//     return acc+' '+el;
+// })
+// console.log(reverse);
 
 
 
+console.log("==================================================================");
+
+
+//!!!!! return the longest word in a string using reduce
 
 let str1 = 'this is a javascript we are learning' 
 let word  = str1.split(' ');
