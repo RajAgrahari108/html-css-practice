@@ -161,4 +161,90 @@ console.log(Object.isFrozen(p1));
 // return true if the object is sealed
 console.log(Object.isSealed(p1))
 
+// ! Methods 
+// A method is function which is declared inside the object 
+let pname = 'Varun'
+let age = 40
+// ! this keyword
+// this keyword is a referencing variable 
+// it will reference to the object which is currently executing the function
+// ! globally -> window 
+// ! global function -> window
+// ! method -> obj which is executing it 
+// ! method as arrow function -> window
+
+// console.log(this); // window
+// function fun(){
+//     console.log(this); //window
+// }
+// fun()
+// window.fun()
+
+// let obj = {
+//     pname:'A',
+//     age:30,
+    // ! 1st way -> key and value pair
+    // details:function(){
+    //     console.log(`Name is ${this.pname} , age is ${this.age}`);
+    //     console.log('Details method');
+    // },
+    // ! 2nd way -> without using key and value pair 
+    // ! arrow function doesn't have their own this keyword so they will borrow from their outer env. 
+//     demo:()=>{
+//          console.log(this); //window -> it will borrow from the parent env 
+//     }
+// }
+// ! how to call a method
+// objName.method()
+// obj.details()
+// obj.demo()
+// let b1 = {
+//     name:'B',
+//     age:40,
+//     details:function(){
+//         console.log(this); // b1
+//         let demo = ()=>{
+//             console.log(this); //b1
+//         }
+//         demo()
+//     }
+// }
+// console.log(b1);
+// b1.details()
+
+// ! call apply bind 
+
+
+// ! Programming
+let cart = [
+    {
+        pname : 'Iphone',
+        price:70000,
+        qty:3
+    },
+    {
+        pname : 'PS5',
+        price:54000,
+        qty:1
+    },
+    {
+        pname : 'LED 155',
+        price:30000,
+        qty:1
+    },
+    {
+        pname : 'speakers',
+        price:10000,
+        qty:1
+    }
+]
+// ! calculate the total of the cart 
+let total = cart.reduce((acc , el , i , arr)=>{
+    console.log(acc , el);
+   return acc+el.price*el.qty;
+} , 0)
+console.log(total);
+
+
+// console.log(this === window);
 
