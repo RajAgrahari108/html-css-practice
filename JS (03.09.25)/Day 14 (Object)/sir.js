@@ -243,7 +243,7 @@ let total = cart.reduce((acc , el , i , arr)=>{
     console.log(acc , el);
    return acc+el.price*el.qty;
 } , 0)
-
+console.log(total);
 
 
 // console.log(this === window);
