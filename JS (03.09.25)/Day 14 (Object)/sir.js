@@ -215,36 +215,3 @@ let age = 40
 // ! call apply bind 
 
 
-// ! Programming
-let cart = [
-    {
-        pname : 'Iphone',
-        price:70000,
-        qty:3
-    },
-    {
-        pname : 'PS5',
-        price:54000,
-        qty:1
-    },
-    {
-        pname : 'LED 155',
-        price:30000,
-        qty:1
-    },
-    {
-        pname : 'speakers',
-        price:10000,
-        qty:1
-    }
-]
-// ! calculate the total of the cart 
-let total = cart.reduce((acc , el , i , arr)=>{
-    console.log(acc , el);
-   return acc+el.price*el.qty;
-} , 0)
-console.log(total);
-
-
-// console.log(this === window);
-
