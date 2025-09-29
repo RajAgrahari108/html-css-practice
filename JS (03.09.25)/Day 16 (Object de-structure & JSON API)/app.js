@@ -4,4 +4,4 @@ let course = {
     courseInstructor  : "hitesh"
 
 } 
-console.log(course.courseInstructor);
+// console.log(course.courseInstructor);
