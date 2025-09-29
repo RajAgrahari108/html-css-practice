@@ -46,7 +46,7 @@ console.log('===========================================');
 console.log(first.innerHTML);
 console.log('===========================================');
 
-console.log(first.textContent)
+console.log(first.textContent);
 
 
 
