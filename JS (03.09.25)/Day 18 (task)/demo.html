@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            width: 80vw;
+            padding: 40px;
+            border-radius: 40px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card{
+            height: 300px;
+            width: 250px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card img{
+            height: 150px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    
+       <script>
+         let data = [
+            {
+                pname: 'iphone',
+                price : 10000,
+                url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUjIVj-V8ofg8brSJ09II0tdD11P-krTlElQ&shttps://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-card-40-17pro-202509_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=WVVFRzUzVk1oblJhbW9PbGNSU25ja3doNjVzb1FWSTVwZWJJYThYTHlrNzQzbUlIR1RvazhDRHNOQlYvM3g2dFIwdkZSSnBZYjhOaHBpM2lkYTFBUEZHTmVoMWFVZloyU3lqdmZCOUFEeDF6K2N6UFd4K21VWHNnbWZBQ3hSanQ'
+
+            },
+           {
+                pname: 'AC',
+                price : 102000,
+                url : 'https://aws-obg-image-lb-2.tcl.com/content/dam/brandsite/global/images-for-blog/history-of-air-conditioner-pc.jpg'
+
+            },
+            {
+                pname: 'TV',
+                price : 13050,
+                url : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRMU3db_Lqw9JHVgm0M611FN_T_fdaCJKLUw&shttps://powerpye.com/wp-content/uploads/2022/10/p1-1-scaled.jpg'
+
+            },
+            {
+                pname: 'Washing Matchine',
+                price : 13000,
+                url:'https://media.tatacroma.com/Croma%20Assets/Large%20Appliances/Washers%20and%20Dryers/Images/300475_0_kaffyj.png'
+
+            }
+           
+        ]
+
+
+
+        let body = document.body;
+        let container = document.createElement('section');
+        container.classList.add('container')
+        body.appendChild(container);
+        data.forEach((el)=>{
+            let card = document.createElement('div');
+            card.classList.add('card');
+
+            let name = document.createElement('h2');
+            let price = document.createElement('p');
+            let img = document.createElement('img');
+            img.src = el.url
+            name.textContent= el.pname
+            price.textContent= el.price
+            card.appendChild(name)
+            card.appendChild(price)
+            card.prepend(img)
+            container.appendChild(card)
+            
+        })  
+
+       </script>
+
+    
+</body>
+</html>

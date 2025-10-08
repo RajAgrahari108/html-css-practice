@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+        img{
+            height: 70vh;
+            width: 80vh;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2022/06/04/01/35/windsurfing-7241074_1280.jpg" alt="">
+
+    <button>Change</button>
+
+
+    <script>
+        let btn =document.querySelector('button');
+        let img = document.querySelector('img');
+        let urls =[
+            'https://cdn.pixabay.com/photo/2022/08/08/19/36/landscape-7373484_1280.jpg',
+            'https://cdn.pixabay.com/photo/2022/11/27/13/22/tree-7619791_1280.jpg',
+            'https://cdn.pixabay.com/photo/2022/05/10/14/37/glacier-7187291_1280.jpg',
+            'https://cdn.pixabay.com/photo/2022/11/05/19/56/bachalpsee-7572681_1280.jpg',
+            'https://cdn.pixabay.com/photo/2024/12/28/03/39/field-9295186_1280.jpg',
+            'https://cdn.pixabay.com/photo/2014/09/02/15/28/styggkarret-433688_1280.jpg'
+        ];
+
+
+        btn.addEventListener('click', ()=>{
+            let random = Math.floor(Math.random()*urls.length)
+            img.src = urls[random]
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+-<body>
+
+    <label for="">user name</label>
+    <input type="text" name="" id="" class="user">
+    <h1>hello</h1>
+    <div class="card"></div>
+    <button class="btn1">click</button>
+
+
+    <script>
+        let btn = document.querySelector('.btn1');
+        let h1 = document.querySelector('h1');
+        let div = document.querySelector('.card');
+
+        btn.addEventListener('click', ()=>{
+            h1.innerHTML = 'bye';
+        })
+        btn.addEventListener('dblclick', ()=>{
+            h1.innerHTML = 'btwwww';
+        })
+        btn.addEventListener('mouseenter', ()=>{
+            h1.innerHTML = 'Welcome';
+        })
+        btn.addEventListener('mouseout', ()=>{
+            h1.innerHTML = 'good bye';
+        })
+        btn.addEventListener('mousemove', ()=>{
+            h1.innerHTML = 'mouse is moving';
+        })
+        
+
+
+        // ! key board event
+
+        let user = document.querySelector('.user')
+        user.addEventListener('keydown', ()=>{
+            console.log('key is down'); 
+        })
+
+        user.addEventListener('keypress', ()=>{
+            console.log('key is keypress ');
+        })
+
+        user.addEventListener('keyup', ()=>{
+            console.log('key is up');
+        })
+        
+        
+    </script>
+</body>
+</html>

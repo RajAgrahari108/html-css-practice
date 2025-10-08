@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 70vw;
+            height: 500px;
+            border: 2px solid black;
+            border-radius: 50px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    <div class="container">
+
+</div>
+
+
+<script>
+    function randomColor(){
+        let r =Math.round(Math.random()*255)
+        let g =Math.round(Math.random()*255)
+        let b =Math.round(Math.random()*255)
+        return `rgb(${r}, ${g}, ${b})`
+    }
+    let container= document.querySelector('.container')
+    container.style.backgroundColor = randomColor()
+    
+</script>
+
+
+</body>
+</html>

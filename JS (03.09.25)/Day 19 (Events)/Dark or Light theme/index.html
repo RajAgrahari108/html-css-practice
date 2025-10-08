@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            margin: 30px 0px;
+
+        }
+        .darkbtn{
+            padding: 10px 20px;
+            font-size: 22px;
+            position: absolute;
+            right: 10px;
+            top: 20px;
+        }
+        .dark{
+            background-color: black;
+            color: white;
+        }
+        .randomTheme{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="theme()" class="darkbtn"> 
+        Dark <i class="fa-solid fa-moon"></i> 
+    </button>
+
+    <button class="randomTheme" onclick="randomTheme()"> Random Theme</button>
+    <h1>Times OF India</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, incidunt. Ex, dolorem eveniet? Rerum quia cumque tenetur, odio quod tempora debitis doloremque ut omnis dolor temporibus! Voluptatem iusto alias quam.
+    Maxime, molestias deserunt laudantium earum neque consequuntur assumenda necessitatibus sapiente, porro nisi sed accusantium minima natus nobis dolore culpa magni quaerat adipisci. Quaerat doloremque, ipsa provident mollitia molestiae temporibus est!
+    Non aliquam voluptatibus laudantium, omnis dignissimos, hic, atque aut vero fuga dicta veritatis dolorum? Sequi maiores quam provident recusandae deserunt soluta earum rerum nemo nesciunt dolores? Similique accusamus ducimus ipsum!
+    Cupiditate temporibus facere qui esse mollitia tenetur, dolores perferendis, nostrum adipisci totam deserunt, ab libero aperiam? Expedita libero odio distinctio vel corrupti modi unde incidunt eos optio! Quos, iste molestiae.
+    Quos praesentium totam beatae blanditiis adipisci distinctio laborum. Consequuntur, corrupti. Aliquam expedita, iste magnam maiores soluta temporibus sit quaerat distinctio delectus possimus culpa vel quas perferendis commodi repellendus, tempore pariatur?
+    Voluptatum, incidunt. Obcaecati vero laboriosam delectus ullam libero commodi illo non culpa aut deserunt necessitatibus neque excepturi, eveniet odio quae labore, modi dolores esse corrupti iusto soluta accusantium nulla assumenda?
+    Pariatur molestiae quo cum ipsa aut maiores sed quaerat, magni praesentium cumque deleniti rem rerum itaque reiciendis dolorum perspiciatis dolor voluptates mollitia facere earum explicabo illo. Iste vero laboriosam minus?
+    Accusamus quae sapiente tempore magnam, expedita quas optio atque, quod sed dolore magni. Magni possimus recusandae fugit voluptates error maiores, quaerat quasi fugiat inventore reprehenderit iste mollitia quis at deserunt?
+    Accusantium repudiandae, beatae ipsum quae deleniti modi accusamus officiis fuga nesciunt vel laudantium ratione quis ullam ut minima voluptates earum, saepe voluptas! Voluptatum repellat veritatis rerum eos recusandae id et.
+    Corporis nobis consequuntur tenetur hic excepturi accusamus dolorum, ratione assumenda officiis, laboriosam voluptates magni sit quidem unde culpa quam voluptatem quod commodi quaerat ipsam quisquam explicabo. Sunt impedit aspernatur accusamus.</p>
+
+
+    <script>
+        let body= document.body;
+        let btn = document.querySelector("button");
+        function theme(){
+            body.style.removeProperty('backgroundColor');
+            body.style.removeProperty('color');
+            if(btn.innerHTML == `Dark <i class="fa-solid fa-moon"></i>` ){
+                btn.innerHTML = `Light <i class="fa-solid fa-sun"></i> `
+            }else{
+                btn.innerHTML = `Dark <i class="fa-solid fa-moon"></i>`
+            }
+            body.classList.toggle('dark')
+
+        }
+
+         function randomColor(){
+                let r = Math.round(Math.random()*255)
+                let g = Math.round(Math.random()*255)
+                let b = Math.round(Math.random()*255)
+
+                return `rgb(${r}, ${g}, ${b})`
+            }
+
+            function randomTheme(){
+                body.style.backgroundColor= randomColor();
+                body.style.color= randomColor();
+            }
+
+      
+    </script>
+</body>
+</html>

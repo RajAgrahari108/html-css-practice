@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      div{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+        border: 2px solid black; 
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 120px;
+
+      }
+       
+      button{
+        display: block;
+        margin: auto;
+        padding: 10px 20px;
+        font-size: 24px;
+        border-radius: 10%;
+      }
+      
+        h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+        
+      
+
+    </style>
+    
+</head>
+<body>
+    <h1>Emoji Task 😁😁😁😁</h1>
+
+
+    <div id="emoji">😍</div>
+    <button id="changebtn">Change</button>
+
+
+    <script>
+
+     let emojis = [
+  "😀", "😂", "🥰", "😎", "🤩",
+  "😴", "🤔", "😡", "😭", "🤗",
+  "🥳", "😇", "🤓", "😜", "😱",
+  "😈", "👻", "👽", "🤖", "💩"
+];
+
+//  let body = document.body;
+//   let div = document.querySelector('div')
+//  let btn = document.querySelector('button')
+
+//   btn.addEventListener('click', function(){
+//     let randomIndex = Math.floor(Math.random() * emojis.length);
+//       div.textContent = emojis[randomIndex];
+//   })
+
+      let div = document.querySelector('div')
+      function chageEmoji(){
+        let random = Math.floor(Math.random()*emojis.length);
+        console.log(random);
+        div.innerHTML= emojis[random]
+        
+      }
+
+
+    </script>
+</body>
+</html>

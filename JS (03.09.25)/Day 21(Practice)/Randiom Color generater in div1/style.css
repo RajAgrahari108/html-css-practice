@@ -1,0 +1,16 @@
+.container{
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            display: grid;
+            grid-template-rows: repeat(3 , 1fr);
+            grid-template-columns: repeat(3 , 1fr);
+        }
+        .items{
+            background-color: rgb(255, 240, 248);
+            border: 2px solid rgb(165, 42, 81);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" >
+        userName <input type="text" class="usename">
+        <br>
+        <button>Submit</button>
+
+    </form>
+
+    <script>
+        let form = document.querySelector('form');
+        let usename = document.querySelector('.usename') 
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault()
+            console.log(usename.value);
+            
+        })
+    </script>
+</body>
+</html>
