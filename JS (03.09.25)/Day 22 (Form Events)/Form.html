@@ -7,20 +7,32 @@
 </head>
 <body>
     <form action="" >
-        userName <input type="text" class="usename">
+        <!-- userName <input type="text" class="usename">
         <br>
-        <button>Submit</button>
+        <button>Submit</button> -->
+
+        <h1>Hello, <span class="name">Guest</span></h1>
+        <input type="text" class="inp1">
 
     </form>
 
     <script>
-        let form = document.querySelector('form');
-        let usename = document.querySelector('.usename') 
-        form.addEventListener('submit', (e)=>{
-            e.preventDefault()
-            console.log(usename.value);
+        // let form = document.querySelector('form');
+        // let usename = document.querySelector('.usename') 
+        // form.addEventListener('submit', (e)=>{
+        //     e.preventDefault()
+        //     console.log(usename.value);
             
-        })
+        // })
+
+
+        let inp1 = document.querySelector('.inp1');
+        let name = document.querySelector('.name')
+         inp1.addEventListener('change', ()=>{
+            console.log('Trigerred');
+            name.textContent = inp1.value;
+            
+         })
     </script>
 </body>
 </html>
