@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+        }
+        section{
+            height: 400px;
+            width: 400px;
+            background-color: blanchedalmond;
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            height: 70%;
+            width: 80%;
+            background-color: aqua;
+
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="flex">
+    
+        <section class="flex">
+            <div class="card flex">
+                <button>Clicked</button>
+            </div>
+        </section>
+        
+   
+
+
+
+
+    <script>
+        let body = document.body;
+        let sec = document.querySelector('section')
+        let div = document.querySelector('div')
+        let btn = document.querySelector('button')
+      
+
+        
+
+       
+        body.addEventListener('click', (e)=>{
+            e.stopPropagation()
+            console.log("Body is clicked");
+            
+        }, true)
+        sec.addEventListener('click', (e)=>{
+            e.stopPropagation()()
+            console.log("Section is clicked");
+            
+        }, true)
+        div.addEventListener('click', (e)=>{
+            e.stopPropagation()
+            console.log("Div is clicked");
+            
+        }, true)
+        btn.addEventListener('click', (e)=>{
+           e.stopPropagation()
+            console.log("Button is clicked");
+            
+        }, true)
+
+
+       
+        
+    </script>
+</body>
+</html>

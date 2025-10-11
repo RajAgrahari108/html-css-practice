@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+        }
+        section{
+            height: 400px;
+            width: 400px;
+            background-color: blanchedalmond;
+        }
+        .flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            height: 70%;
+            width: 80%;
+            background-color: aqua;
+
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body class="flex">
+    
+        <section class="flex">
+            <div class="card flex">
+                <button>Clicked</button>
+            </div>
+        </section>
+        
+   
+
+
+
+
+    <script>
+        let body = document.body;
+        let sec = document.querySelector('section')
+        let div = document.querySelector('div')
+        let btn = document.querySelector('button')
+      
+
+          // ! event Bubbling 
+
+
+        // body.addEventListener('click', ()=>{
+        //     console.log("Body is clicked");
+            
+        // })
+        // sec.addEventListener('click', ()=>{
+        //     console.log("Section is clicked");
+            
+        // })
+        // div.addEventListener('click', ()=>{
+        //     console.log("Div is clicked");
+            
+        // })
+        // btn.addEventListener('click', ()=>{
+        //     console.log("Button is clicked");
+            
+        // })
+        
+
+
+
+        //! Event Propagation-
+        // Event Propagation is the flow of the event in DOM hierarchy.
+        // There are three phases
+        // 1. Event Capturing- In this phase the event flows from top to bottom (window to target) in the DOM hierrarchy
+        // useCapture (true) 
+        // 2. Event Bubbling- In this phase the event flows from  bottom to top (target to window) in the DOM hierrarchy
+        // useCapture (false)
+
+
+
+
+        // ! event capturing
+
+
+        body.addEventListener('click', ()=>{
+            console.log("Body is clicked");
+            
+        }, true)
+        sec.addEventListener('click', ()=>{
+            console.log("Section is clicked");
+            
+        }, true)
+        div.addEventListener('click', ()=>{
+            console.log("Div is clicked");
+            
+        }, true)
+        btn.addEventListener('click', ()=>{
+            console.log("Button is clicked");
+            
+        }, true)
+
+
+        // what is use capture
+        // usecapture is the third argument of addEventListener
+        // usecapture accept thr boolen value
+        // by defoult the the value of usecapture is false , if usecaptureis set to false the event will be executed in bubbling phase
+        // if usecapture is set to true the event will be exected in capture phase 
+        
+    </script>
+</body>
+</html>

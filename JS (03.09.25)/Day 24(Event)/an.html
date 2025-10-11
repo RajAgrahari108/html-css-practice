@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border: 2px solid black;
+            margin: 0px 20px;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quia.</p>
+        <button class="btn">Change color</button>
+    </div>
+
+
+    <script>
+
+        let btn = document.querySelector('.btn')
+        let container = document.querySelector('.container')
+        btn.addEventListener('click', (e)=>{
+            e.stopPropagation()
+            container.style.backgroundColor ='red'
+            // container.style.backgroundColor ='red'
+
+
+        })
+
+        container.addEventListener('click', (e)=>{
+            e.stopPropagation();
+            container.remove();
+        })
+    </script>
+</body>
+</html>
