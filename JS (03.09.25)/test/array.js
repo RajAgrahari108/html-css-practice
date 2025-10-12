@@ -15,7 +15,7 @@ let data = users.filter((item)=>{
     if(item.isActive===true)
         return item
 })
-console.log(data)
+console.log(data);
 
 
 let location = users.find((item)=>{
