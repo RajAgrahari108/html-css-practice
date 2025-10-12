@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+
+    <form onsubmit="valLogin(event)">
+      <input type="text" placeholder="Enter the name" id="namee" /><br /><br />
+      <input type="password" placeholder="Enter the password" id="pwd" /><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function valLogin(event) {
+        const username = document.getElementById("namee").value;
+        const password = document.getElementById("pwd").value;
+
+        if (username === "raj" && password === "1234") {
+          alert("Login successful ✅");
+        } else {
+          alert("Login failed ❌");
+        }
+      }
+    </script>
+  </body>
+</html>
