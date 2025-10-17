@@ -3,7 +3,7 @@
 // it is use to unpack the character if the string or the element of the array or properties of an object
 
 
-// !with string
+// !with strin
 // let str = "javascript"
 // console.log(...str);
 // console.log('j', 'a','v','a');
